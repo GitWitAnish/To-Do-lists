@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    color: #25265e;
+    width: 300px;
+}
+
+#add-list-btn {
+    text-align: left;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#add-list-btn::before {
+    content: "+";
+    font-size: 24px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+
+#add-list-btn:hover {
+    background-color: #f0f0f0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#clear-all-btn {
+    background-color: #25265e;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.delete:hover {
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+input[type="text"] {
+    color: #25265ede;
+    background-color: transparent;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-bottom: 1px solid black;
+}
+
+.completed {
+    text-decoration: line-through;
+}
